@@ -1,0 +1,71 @@
+Quelle est la différence entre MongoDB et MySQL ?
+MongoDB et MySQL sont deux systèmes de gestion de base de données que vous pouvez utiliser pour stocker et gérer des données. MySQL est un système de base de données relationnelle qui stocke les données dans un format tabulaire structuré. En revanche, MongoDB stocke les données sous forme de documents JSON dans un format plus flexible. Les deux offrent des performances et une capacité de mise à l'échelle, mais ils offrent de meilleures performances pour des cas d'utilisation différents.
+
+En savoir plus sur MySQL »
+
+En savoir plus sur MongoDB »
+
+Quelles sont les similitudes entre MongoDB et MySQL ?
+MySQL et MongoDB sont tous deux des systèmes de gestion de base de données. Ils stockent des données et disposent d'une interface utilisateur et d'un langage de requête intégrés, ce qui vous permet d'ajouter, de modifier et d'analyser des données.
+
+Licences open source
+MySQL et les premières versions de MongoDB possèdent tous deux des licences open source. Vous pouvez télécharger les versions open source gratuitement. Vous pouvez ensuite modifier le code en fonction de ce que vous devez en faire.
+
+MySQL est sous licence publique générale GNU. Toutes les versions de MongoDB publiées avant le 16 octobre 2018 sont disponibles sous la licence publique générale GNU Affero.
+
+Prise en charge de l'indexation
+MySQL et MongoDB utilisent l'indexation pour améliorer la vitesse et les performances des requêtes. Les index sont des structures de base de données qui renvoient à des données fréquemment consultées. L'index permet de trouver et de récupérer des données très rapidement.
+
+Les plateformes de base de données MySQL et MongoDB utilisent des index de hachage, des index « arbre B » et plus encore.
+
+Interfaces conviviales
+MongoDB et MySQL sont faciles à utiliser. Ils proposent un langage de requête basé sur le langage naturel pour mettre à jour et lire les données. Ils offrent également une interface utilisateur graphique (GUI) permettant de gérer et d'analyser les données de manière plus visuelle.
+
+Langages de programmation
+MySQL et MongoDB sont compatibles avec de nombreux langages de programmation identiques. Vous pouvez utiliser Java, Python, Node.js, PHP côté serveur, Ruby et C# avec MongoDB et MySQL.
+
+Sécurité
+MySQL et MongoDB utilisent l'authentification, le contrôle d'accès et le chiffrement pour garantir la sécurité de leurs bases de données. Ils utilisent le chiffrement TLS/SSL pour protéger les données en transit et au repos. Ils vous permettent également de définir différents niveaux d'accès utilisateur.
+
+Documentation et aide de la communauté
+MySQL et MongoDB disposent chacun d'une documentation officielle détaillée sur leurs sites Web. Leurs didacticiels, manuels et guides contiennent des instructions complètes pour installer, configurer et exécuter des tâches opérationnelles.
+
+MongoDB et MySQL disposent également d'une communauté de développeurs active pour répondre à vos questions et vous aider à résoudre les problèmes. Ils proposent également tous deux des éditions d'entreprise avec un support dédié à vos besoins spécifiques. 
+
+Principales différences : MongoDB vs MySQL
+MySQL est un système de gestion de base de données relationnelle, tandis que MongoDB est un système de base de données NoSQL. Vous pouvez en savoir plus à ce sujet sur les pages Qu'est-ce qu'une base de données relationnelle ? et Présentation de NoSQL.
+
+MySQL utilise le langage SQL, bien connu de la plupart des développeurs. À l'inverse, MongoDB utilise le langage de requête MongoDB (MQL). Bien qu'il existe des similitudes entre MQL et SQL, l'apprentissage de MQL est en général un peu plus complexe. 
+
+Nous allons maintenant aborder d'autres différences clés.
+
+Modèle de données
+MySQL est un système de base de données relationnelle qui stocke les données dans des colonnes, des lignes et des tableaux. Vous stockez les données dans des lignes, chaque colonne représentant un type de données différent. Vous définissez ensuite les relations entre les données à l'aide de clés étrangères et de clés primaires. Chaque tableau possède une clé primaire que vous utilisez pour l'identifier, la clé étrangère créant une relation.
+
+MongoDB est une base de données orientée document qui stocke toutes ses données sous forme de documents binaires JSON (BSON). BSON vous permet de sérialiser de nombreuses formes de données. L'utilisation de documents BSON vous permet de stocker des données non structurées, semi-structurées et structurées. Au lieu d'un schéma de base de données, MongoDB utilise une approche flexible et stocke les documents dans des collections.
+
+Capacité de mise à l’échelle
+Dans un système de base de données MySQL, les options de mise à l'échelle disponibles sont limitées. Vous pouvez choisir entre les options ci-dessous :
+
+Capacité de mise à l'échelle verticale grâce à l'ajout de ressources supplémentaires au serveur de base de données actuel
+Réplication en lecture en créant des copies en lecture seule de la base de données sur d'autres serveurs
+La réplication en lecture est limitée à un maximum de cinq copies. Les réplicas peuvent également être en retard par rapport à la copie principale, ce qui entraîne des problèmes de performances à l'échelle. La capacité de mise à l'échelle verticale est également limitée à l'infrastructure que vous utilisez. 
+
+En revanche, la conception de MongoDB offre un avantage significatif en termes de capacité de mise à l'échelle. Elle est dotée de deux fonctionnalités principales pour la mise à l'échelle :
+
+Ensembles de réplicas : groupes de serveurs MongoDB contenant des données identiques
+Partitionnement : différentes parties de vos données réparties sur différents serveurs
+MongoDB vous permet de créer des clusters partitionnés, afin que certaines parties de vos données soient répliquées sur plusieurs serveurs. Par exemple, si vous possédez un grand nombre de dossiers clients, vous pouvez les distribuer de manière à ce que les noms de A à J et de K à Z figurent dans leur propre ensemble de réplicas. MongoDB peut ainsi se mettre à l'échelle horizontalement pour optimiser les performances de lecture et d'écriture à l'échelle.
+
+Performance
+MySQL est conçu pour créer des jonctions performantes entre plusieurs tableaux correctement indexés. Toutefois, les données doivent être insérées ligne par ligne, ce qui ralentit les performances d'écriture.
+
+Les documents MongoDB suivent un modèle de données hiérarchique et conservent la plupart des données dans un seul document, réduisant ainsi le besoin de jonctions entre plusieurs documents. Les jonctions sont prises en charge via l'opération $lookup, mais elles ne sont pas optimisées en termes de performances. Cependant, MongoDB propose une API insertMany() pour insérer rapidement des données, en donnant la priorité aux performances d'écriture. 
+
+Flexibilité
+En tant que système de gestion de base de données relationnelle, MySQL possède une structure plus rigide que MongoDB. MySQL utilise un schéma fixe et organise les données en lignes et en tableaux. Vous devez structurer les données et les intégrer dans un système tabulaire pour utiliser MySQL. 
+
+En stockant les données sous forme de documents JSON, MongoDB vous permet de créer des applications complexes avec de nombreux types de données distincts. Par exemple, vous pouvez créer de nouveaux champs en mettant à jour les champs imbriqués d'un tableau. Vous pouvez également utiliser un pipeline d'agrégation, une fonctionnalité de MongoDB qui vous permet de transformer des données en combinant plusieurs opérations en un seul flux de travail.
+
+Contrôle d'accès
+Dans MongoDB, vous pouvez contrôler l'accès au niveau d'une opération, d'une collection ou d'une base de données. La solution utilise les certificats Kerberos, X.509 et LDAP pour authentifier les utilisateurs. En revanche, MySQL vous permet de restreindre l'accès des utilisateurs au niveau de l'utilisateur, de la base de données et du tableau. MySQL utilise son propre système d'authentification. Il présente une faille de sécurité supplémentaire face aux attaques par injection SQL, que l'approche sans schéma de MongoDB permet d'éviter.
